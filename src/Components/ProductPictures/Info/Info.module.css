@@ -1,0 +1,13 @@
+.container {
+ width: 100%;
+ height:max(60px , 5vh );
+max-height: 200px; 
+    border-radius: 0 0 20px 20px ;
+    background-color: #DBC9B8;
+    position: absolute;
+    top: 100%;
+    transition: 1s all;
+}
+.hover {
+    top: 90%;
+}

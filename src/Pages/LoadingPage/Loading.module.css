@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background-color: #EBE6D7;
+position: relative;
+
+}
+.Bigcontainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+}

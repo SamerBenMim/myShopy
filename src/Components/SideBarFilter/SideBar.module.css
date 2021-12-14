@@ -1,0 +1,10 @@
+.container {
+    width: 20%;
+    height: 70%;
+    max-height: 1140px;
+    min-height: 700px;
+    background-color: #DBC9B8;
+    margin-left: 5vw;
+    min-width: 250px;
+
+}

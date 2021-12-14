@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+.container {
+    width: 3vw;
+    min-width: 30px;
+    height: 3vh;
+    min-height: 25px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    background: #dbc9b800;
+   border: 2px #DBC9B8 solid;
+    font-family: 'Italiana', serif;
+    border-radius: 10px;
+    transition: 0.5s all;
+    font-size: max(1vw , 18px);
+}
+.container:hover {
+    cursor: pointer;
+    background-color: #be9e81;
+color: white;
+border: 2px  #be9e81 solid;
+
+
+}
