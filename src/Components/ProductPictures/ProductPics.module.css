@@ -1,0 +1,9 @@
+.container {
+    background-color: #B99474;
+    width: max(20% , 250px);
+    height: max(250px , 35vh);
+    margin: 0px 20px 20px;
+    min-width:250px;
+    margin-bottom: max(10vh , 80px);
+    position: relative;
+}
