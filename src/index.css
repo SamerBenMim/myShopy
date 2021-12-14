@@ -1,5 +1,7 @@
 *{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html,body {
   width: 100%;
@@ -13,4 +15,7 @@ background-color: #f3f0e8;
 @font-face {
   font-family: Logo;
   src: url(./xFonts/LOGO.ttf);
+}
+a{
+  text-decoration: none;
 }

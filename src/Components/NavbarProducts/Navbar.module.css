@@ -35,11 +35,16 @@ font-family: 'IM Fell Double Pica SC', serif;
 font-size: max(1vw , 18px);
 font-family: 'Karla', sans-serif;
 font-weight: 600;
+color: white;
+transition: .3s ease-out;
 }
 .section:hover, .search:hover , .bag:hover {
   cursor: pointer;
 }
 
+.section:hover{
+  color: #916d4b
+}
 
 
 .icons {
@@ -75,4 +80,7 @@ margin-left: 10px;
 max-width: 30px;
 min-width: 1vw ; 
 
+}
+.active {
+  color: black;
 }
