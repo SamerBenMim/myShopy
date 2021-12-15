@@ -1,0 +1,94 @@
+.header {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .header-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: zoom-in-out 1.7s 3s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.header .header-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.header .header-img::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header .header-content {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  padding: 70px 0;
+  transition-property: opacity, transform;
+  animation: fade-up 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3.5s forwards;
+}
+
+.header .header-content .header-txt {
+  position: relative;
+  display: block;
+  color: white;
+  font-size: max(2vw, 60px);
+  font-family: "IM Fell Double Pica SC", serif;
+  font-weight: 400;
+}
+
+.header .header-content .header-btn {
+  position: relative;
+  display: block;
+  left: 40%;
+  max-width: 150px;
+  min-height: 30px;
+  margin-top: 20px;
+  border: 2px solid transparent;
+  border-radius: 12%;
+  font-size: 35px;
+  font-family: "IM Fell Double Pica SC", serif;
+  background-color: #ebe6d7;
+  color: black;
+  transition: 0.5s ease-in;
+}
+
+.header .header-content .header-btn:hover {
+  background-color: transparent;
+  border: 2px solid #dbc9b8;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translate3d(0, 100px, 0);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}

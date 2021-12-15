@@ -1,0 +1,7 @@
+.big-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background-color: #ebe6d7;
+}
