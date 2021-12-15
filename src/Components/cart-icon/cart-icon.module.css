@@ -1,0 +1,28 @@
+.bag:hover {
+    cursor: pointer;
+  }
+.bag {
+    width:30%;
+    margin-left: .1rem;
+    
+    max-width: 3.5rem;
+    min-width: 30px ; 
+    
+}
+.item_count{
+    position: fixed;
+    font-size: 15px;
+    font-weight: 700;
+    /* bottom: 39px; */
+    /* top: 1.6vw; */
+    /* left: 39px; */
+    transform: translateY(3px);
+}
+
+.wrap{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html,
 body {
@@ -8,6 +10,10 @@ body {
 
 body.animated {
   overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 #root,
@@ -19,4 +25,7 @@ body.animated {
 @font-face {
   font-family: Logo;
   src: url(./xFonts/LOGO.ttf);
+}
+a {
+  text-decoration: none;
 }
