@@ -1,12 +1,16 @@
 import React,{useState} from "react";
 import navbar from "./Navbar.module.css";
 import search from "../../xSVG/search.svg"
-import bag from "../../xSVG/bag.svg"
-
+import CartIcon from "./../cart-icon/cartIcon";
+import X from "../X/X";
 const Navbar = () => {
   const [active, setActive] = useState(0)
+  const [input, setInput] = useState(true)
+
   return (
-    <div className={navbar.container}>
+    <nav className={navbar.container}>
+      <div className={navbar.list_container}>
+        <X/>
       <ul className={navbar.sections}>
         <li className={navbar.section} onClick={()=>{setActive(0)}}>
           <a className={ (active==0)? navbar.active : navbar.section} href="#" >Femme</a>
@@ -18,13 +22,20 @@ const Navbar = () => {
         <a className={ (active==2)? navbar.active : navbar.section} href="#">Enfant</a>
           </li>
       </ul>
-      <div className={navbar.logo}>LOGO</div>
+      </div>
+      <div className={navbar.logo}>
+        <h3>LOGO</h3>
+        </div>
       <div className={navbar.icons}>
+          {!input && <input type="text" id="id" autoFocus placeholder='search'/>}
           <div className={navbar.wrapperIcons}>
-      <img src={search} className={navbar.search} alt="bag" />
-      <img src={bag} className={navbar.bag} alt="loop" />
+            <div className={navbar.wrap}>
+            <img src={search}  onClick={()=>{setInput(!input)}} className={navbar.search} alt="loop" />
+
+            </div>
+      <CartIcon/>
       </div></div>
-    </div>
+    </nav>
   );
 };
 

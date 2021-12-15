@@ -1,0 +1,60 @@
+
+  .menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+  }
+  .middle-menu-btn {
+    width:26px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #534a4a;
+    transition: all .5s ease-in-out;
+  }
+  .middle-menu-btn::before,
+  .middle-menu-btn::after {
+    content: '';
+    position: absolute;
+    width:40px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #534a4a;
+    transition: all .5s ease-in-out;
+  }
+  .middle-menu-btn::before {
+    transform: translateY(-13px);
+  }
+  .middle-menu-btn::after {
+    transform: translateY(13px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .middle-menu-btn {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .middle-menu-btn::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .middle-menu-btn::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  .X{
+      display: none;
+  }
+  @media screen and (max-width: 800px) {
+  
+    .X{
+      display: block;
+    }
+   }
+   
