@@ -8,7 +8,7 @@ const Wellcome = () => {
   return (
     <div className={classes["big-container"]}>
       <LoadingIntro />
-      <Header />
+      {/* <Header /> */}
     </div>
   );
 };
