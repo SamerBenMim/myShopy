@@ -1,0 +1,41 @@
+.btn:hover {
+    background:   #645832;
+    color: #fff;
+}
+.bouton a {
+    background: #ebe6d7;
+    border-radius: .5rem;
+    color:rgb(0, 0, 0);
+    padding: 1.3rem 3.7rem;
+    font-family: sans-serif;
+}   
+
+.bouton{
+    opacity: 0;
+    animation: moveUp .5s  4.6s ease-out;
+    animation-fill-mode: forwards;}
+.btn {
+    
+    transition: color .2s ease-out,background-color .2s ease-out;
+}
+
+a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+
+@keyframes moveUp {
+    0% {
+      opacity: 0; 
+      transform: translateY(40px); 
+    } 
+    20% {
+      opacity: .9; 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    } 
+  }

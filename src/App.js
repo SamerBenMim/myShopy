@@ -1,5 +1,5 @@
 import './App.css';
-import Loading from './Pages/LoadingPage/Loading';
+import Wlc from './Pages/LoadingPage/Wlc';
 import Routing from './Routing';
 import {
   BrowserRouter,
@@ -15,11 +15,10 @@ function App() {
   return (
     <div className="App">
 <BrowserRouter>
-        <Navbar></Navbar>
   <Routes>
-{/* 
+
        <Route path="/products"  element={<Products />}/>
-       <Route path="/" element={<Loading />}/> */}
+       <Route path="/" element={<Wlc />}/>
 
    
   </Routes></BrowserRouter>

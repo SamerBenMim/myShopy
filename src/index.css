@@ -9,6 +9,20 @@ html,body {
 html {
   font-size: 62.5%; 
 }
+body{
+  background-color: #EBE6D7;
+  
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 
 #root, .App {

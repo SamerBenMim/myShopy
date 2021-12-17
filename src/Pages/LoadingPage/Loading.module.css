@@ -4,14 +4,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
-background-color: #EBE6D7;
-position: relative;
+  background-color: #EBE6D7;
+  position: relative;
+  animation: darken 1.3s  3.2s cubic-bezier(0.87, 0.1, 0.21, 0.99);
+  animation-fill-mode: forwards;
+  overflow-x: hidden;
+}
+
+.Bigcontainer { 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  animation: move 1.3s  3.2s cubic-bezier(0.87, 0.1, 0.21, 0.99);
+  animation-fill-mode: forwards;
 
 }
-.Bigcontainer {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
 
-}
+ @keyframes move {
+      0% { transform :translateY(0) } 
+      100% { transform :translateY(-100%);   
+    } 
+    }
+
+ @keyframes darken {
+      0% { filter: brightness(100%);} 
+      100% { filter: brightness(20%); } 
+    }
+
+    
+
+    @keyframes resize {
+        0% { background-size: 200% 200%;} 
+        100% {background-size: 100% 100%;
+        } 
+      }
+     
