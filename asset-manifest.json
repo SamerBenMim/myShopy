@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/myShopy/static/css/main.06382273.chunk.css",
+    "main.js": "/myShopy/static/js/main.9d2ae7c1.chunk.js",
+    "main.js.map": "/myShopy/static/js/main.9d2ae7c1.chunk.js.map",
+    "runtime-main.js": "/myShopy/static/js/runtime-main.e67c4147.js",
+    "runtime-main.js.map": "/myShopy/static/js/runtime-main.e67c4147.js.map",
+    "static/js/2.682aa445.chunk.js": "/myShopy/static/js/2.682aa445.chunk.js",
+    "static/js/2.682aa445.chunk.js.map": "/myShopy/static/js/2.682aa445.chunk.js.map",
+    "index.html": "/myShopy/index.html",
+    "static/css/main.06382273.chunk.css.map": "/myShopy/static/css/main.06382273.chunk.css.map",
+    "static/js/2.682aa445.chunk.js.LICENSE.txt": "/myShopy/static/js/2.682aa445.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/myShopy/static/media/LOGO.5613d62b.ttf",
+    "static/media/bag.ece418e0.svg": "/myShopy/static/media/bag.ece418e0.svg",
+    "static/media/wlc.module.css": "/myShopy/static/media/bg.511d9792.png",
+    "static/media/search.7235c71d.svg": "/myShopy/static/media/search.7235c71d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e67c4147.js",
+    "static/js/2.682aa445.chunk.js",
+    "static/css/main.06382273.chunk.css",
+    "static/js/main.9d2ae7c1.chunk.js"
+  ]
+}
